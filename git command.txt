@@ -91,7 +91,7 @@ git remote
 將本地分支推送到遠端分支**git push --set-upstream https://github.com/Askerer/Git_practice.git master
 git push 遠端數據庫名稱 遠端分支名稱
  
-將遠端分支拉下來與本地分支進行合併
+將遠端分支拉下來與本地分支進行合併git pull = git fetch + git merge
 git pull
 標籤
 
