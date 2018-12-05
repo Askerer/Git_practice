@@ -47,6 +47,11 @@ git reset HEAD 檔案名稱
  
 恢復單一檔案到最新 commit 狀態
 git checkout 檔案名稱 
+
+**HEAD目前所在位置指標
+git checkout 前四碼
+git checkout master
+
  
 刪除最近一次 commit 
 git reset --hard "HEAD^" 
@@ -83,7 +88,7 @@ git clone 遠端數據庫網址
 查詢遠端數據庫
 git remote
  
-將本地分支推送到遠端分支
+將本地分支推送到遠端分支**git push --set-upstream https://github.com/Askerer/Git_practice.git master
 git push 遠端數據庫名稱 遠端分支名稱
  
 將遠端分支拉下來與本地分支進行合併
