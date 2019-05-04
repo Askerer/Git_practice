@@ -1,0 +1,34 @@
+--------------------------------------------------------
+--  已建立檔案 - 星期六-5月-04-2019   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table HI_TUNEBEAM_RECORD
+--------------------------------------------------------
+
+  CREATE TABLE "WEATHER"."HI_TUNEBEAM_RECORD" 
+   (	"SEQ" VARCHAR2(40 BYTE), 
+	"EQPID" VARCHAR2(255 BYTE), 
+	"STARTTIME" DATE, 
+	"ENDTTIME" DATE, 
+	"STATUS" VARCHAR2(20 BYTE), 
+	"REMARK" VARCHAR2(255 BYTE), 
+	"RECIPE" VARCHAR2(255 BYTE)
+   ) SEGMENT CREATION DEFERRED 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  TABLESPACE "USERS" ;
+REM INSERTING into WEATHER.HI_TUNEBEAM_RECORD
+SET DEFINE OFF;
+--------------------------------------------------------
+--  DDL for Index HI_TUNEBEAM_RECORD_INDEX1
+--------------------------------------------------------
+
+  CREATE INDEX "WEATHER"."HI_TUNEBEAM_RECORD_INDEX1" ON "WEATHER"."HI_TUNEBEAM_RECORD" ("EQPID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS NOCOMPRESS LOGGING
+  TABLESPACE "USERS" ;
+
+--------------------------------------------------------
+--  DDL for Index HI_TUNEBEAM_RECORD_INDEX2
+--------------------------------------------------------
+ CREATE INDEX "WEATHER"."HI_TUNEBEAM_RECORD_INDEX2" ON "WEATHER"."HI_TUNEBEAM_RECORD" ("STARTTIME") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS NOCOMPRESS LOGGING
+  TABLESPACE "USERS" ;
