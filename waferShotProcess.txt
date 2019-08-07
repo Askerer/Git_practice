@@ -1,0 +1,28 @@
+1.Single Wafer -- All Shot Composite
+   Select reticle_x , reticle_y , count(*) , count(*) / select count(*) from mmm where re 
+    From XXX 
+    Where wafer = 01
+    group reticle_x , reticle_y
+
+2.Composite Wafer -- Single Shot
+   Select reticle_x , reticle_y , count(*) , count(*) / select count(*) from mmm where re 
+    From XXX 
+    Where reticle_index_x = xx  and reticle_index_y = yy
+    group reticle_x , reticle_y
+
+3.Single Wafer -- X direction
+   Select reticle_x , reticle_y , count(*) , count(*) / select count(*) from mmm where re 
+    From XXX 
+    Where wafer = 01
+    and reticle_index_y = y
+    and reticle_index_x <= x_array_x
+    group reticle_x , reticle_y
+
+
+4.Single Wafer -- Y direction
+   Select reticle_x , reticle_y , count(*) , count(*) / select count(*) from mmm where re 
+    From XXX 
+    Where wafer = 01
+    and reticle_index_x = x
+    and reticle_index_y <= y_array
+    group reticle_x , reticle_y
