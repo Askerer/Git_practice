@@ -1,0 +1,32 @@
+
+#複合式的class 名稱使用 css selector
+driver.find_element_by_css_selector("[class='j-inputtext dlemail']").send_keys("yoyo")
+
+#input button 
+driver.find_element_by_xpath("//input[@name='continue'][@type='button']")
+
+6. xpath邏輯運算
+xpath支援與(and)、或(or)、非(not)，如下：
+
+driver.find_element_by_xpath("//*[@id='kw' and @autocomplete='off']").send_keys("by_xpath")
+7. xpath模糊匹配
+# 匹配文字
+driver.find_element_by_xpath("//*[contains(text(), 'hao123')]").click()
+# 匹配屬性
+driver.find_element_by_xpath("//*[contains(@id, 'kw')]").click()
+# 匹配以什麼開頭
+driver.find_element_by_xpath("//*[starts-with(@id, 's_kw_')]").click()
+# 匹配以什麼結尾
+driver.find_element_by_xpath("//*[ends-with(@id, 'kw_wrap')]").click()
+
+h1:not([id])	//h1[not(@id)]	
+Text match	//button[text()="Submit"]	
+Text match (substring)	//button[contains(text(),"Go")]	 
+Arithmetic	//product[@price > 2.50]	 
+Has children	//ul[*]	 
+Has children (specific)	//ul[li]	 
+Or logic	//a[@name or @href]	
+Union (joins results)	//a | //div
+
+
+https://devhints.io/xpath
