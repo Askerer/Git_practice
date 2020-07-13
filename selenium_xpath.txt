@@ -30,3 +30,6 @@ Union (joins results)	//a | //div
 
 
 https://devhints.io/xpath
+
+
+https://sqa.stackexchange.com/questions/26261/geckodriver-how-to-use-mozfirefoxoptions-on-node-config-for-selenium-grid
